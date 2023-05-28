@@ -1,5 +1,5 @@
 {% set name = "lru-dict" %}
-{% set version = "1.1.8" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 878bc8ef4073e5cfb953dfc1cf4585db41e8b814c0106abde34d00ee0d0b3115
+  sha256: 13c56782f19d68ddf4d8db0170041192859616514c706b126d0df2ec72a11bd7
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
